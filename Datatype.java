@@ -13,3 +13,23 @@ class datatype{
         System.out.println(age);
     }
 }
+
+//practice program
+// Write a program named StudentInfo.java that prints:
+
+// Name: Sagar Joshi
+// Age: 19
+// Semester: 2
+// Grade: A
+class student{
+    public static void main(String[] args){
+        String name="Sagar joshi";
+        int age=20;
+        int semester=2;
+        char grade='A';
+        System.out.println("Name:" + name);
+        System.out.println("Age:" + age);
+        System.out.println("Semester:" + semester);
+        System.out.println("Grade:" + grade);
+    }
+}
