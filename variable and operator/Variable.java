@@ -62,3 +62,41 @@ class Swap{
 
     }
 }
+
+//even or odd
+class EvenOrOdd{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a number:");
+        int n=sc.nextInt();
+
+        //checking even or odd
+        if(n%2==0){
+            System.out.println("Even");
+        }else{
+            System.out.println("odd");
+        }
+        
+    }
+}
+
+//check positive,negative or zero
+class check{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        //taking input from the user
+        System.out.print("Enter a number:");
+        int n=sc.nextInt();
+
+        //checking positive,negative or zero
+        if(n>0){
+            System.out.println("Number is positive");
+        }else if(n<0){
+            System.out.println("Number is Negative");
+            
+        }else{
+             System.out.println("Number is Zero");
+
+        }
+    }
+}
