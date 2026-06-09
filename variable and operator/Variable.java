@@ -100,3 +100,41 @@ class check{
         }
     }
 }
+
+//largest of three number
+class Largest{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+
+           
+            try{
+            System.out.print("Enter first number:");
+            int a=sc.nextInt();
+            }catch(Exception ee){
+                System.out.print("You entered wrong value so, ReEnter first number:");
+                int a=sc.nextInt();
+            }
+           
+
+             System.out.print("Enter second  number:");
+            int b=sc.nextInt();
+            
+
+             System.out.print("Enter third number:");
+            int c=sc.nextInt();
+
+            //checking largest number
+            
+            if(a>b && a>c){
+                System.out.println(a + " is largest");
+            }else if(b>a && b>c){
+                System.out.println(b + " is largest");
+                                
+            }else{
+                System.out.println(c + " is largest");
+            
+            
+
+        }
+    }
+}
