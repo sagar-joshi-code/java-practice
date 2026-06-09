@@ -101,3 +101,99 @@ class check{
     }
 }
 
+//using switch case statement perform Day of Week Program
+class DayWeek{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter a day from 1-7: ");
+        int day=sc.nextInt();
+
+        switch(day){
+            case 1:
+                System.out.println("Sunday");
+                break;
+
+                case 2:
+                    System.out.println("Monday");
+                    break;
+
+                    case 3:
+                        System.out.println("Tuesday");
+                    break;
+
+                    case 4:
+                        System.out.println("Wednesday");
+                    break;
+
+                    case 5:
+                        System.out.println("Thursday");
+                    break;
+
+                    case 6:
+                        System.out.println("Friday");
+                    break;
+
+                    case 7:
+                        System.out.println("Saturday");
+                    break;
+
+                    default:
+                        System.out.println("Invalid choice");
+
+
+
+
+        }
+    }
+}
+
+
+//Menu-Driven Calculator
+class MenuCal{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("........Menu.......");
+        System.out.println("1.Addition");
+        System.out.println("2.Subtraction");
+        System.out.println("3.Multiplication");
+        System.out.println("4.Division");
+
+        System.out.println("Enter choice: ");
+        int choice=sc.nextInt();
+
+        System.out.println("Enter first number: ");
+        int a=sc.nextInt();
+
+         System.out.println("Enter second number: ");
+        int b=sc.nextInt();
+
+        switch(choice){
+            case 1:
+                System.out.println("Addition = " + ( a+b));
+                break;
+
+        
+
+           case 2:
+                System.out.println("Subtraction = " + ( a-b));
+                break;
+        
+
+           case 3:
+                System.out.println("Multiplication = " + ( a*b));
+                break;
+        
+
+           case 4:
+                System.out.println("Division = " + ( a/b));
+                break;
+        
+
+        default:
+            System.out.println("Invalid choice");
+
+
+
+        }
+    }
+}
