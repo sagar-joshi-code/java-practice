@@ -122,3 +122,122 @@ class Search{
 
     }
 }
+
+//Reverse Array
+class Reverse{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int arr[]=new int[5];
+        System.out.print("Enter 5 number: ");
+        for(int i=0;i<arr.length;i++){
+            arr[i]=sc.nextInt();
+        }
+        System.out.print("Reversed array: ");
+        for(int i=arr.length-1;i>=0;i--){
+            System.out.println(arr[i]);
+        }
+
+    }
+}
+
+//Count Even and Odd Numbers in an Array
+class CountEvenOdd{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int arr[]=new int [5];
+        int even=0;
+        int odd=0;
+        System.out.print("Enter 5 number : \n");
+        for(int i=0;i<arr.length;i++){
+            arr[i]=sc.nextInt();
+        }
+        System.out.print("Even and odd number : \n");
+                for(int i=0;i<arr.length;i++){
+                    if(arr[i] % 2 == 0){
+                        even ++;
+                    }else{
+                        odd ++;
+                    }
+                }
+                    System.out.println("Even : " + even);
+                    System.out.println("Odd : " + odd);
+
+        
+
+    }
+}
+
+//Count Frequency of an Element
+class CheckFrequency{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int arr[]=new int[5];
+        int Count=0;
+        System.out.print("Enter 5 number : \n");
+        for(int i=0;i<arr.length;i++){
+            arr[i]=sc.nextInt();
+
+        }
+        System.out.print("Checking Frequency : ");
+        int key=sc.nextInt();
+        for(int i=0;i<arr.length;i++){
+            if(arr[i] == key){
+                Count++;
+            }
+
+        }
+
+            System.out.println("Frequency : " + Count);
+
+    }
+}
+
+//Copy One Array into Another Array
+class CopyArr{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int arr[]=new int[5];
+        int copy[]=new int[5];
+
+        System.out.print("Enter 5 element : \n");
+        for(int i=0;i<arr.length;i++){
+            arr[i]=sc.nextInt();
+        }
+
+        //copying element
+        for(int i=0;i<arr.length;i++){
+            copy[i]=arr[i];
+        }
+
+        System.out.print("Copied Element : \n");
+        for(int i=0;i<arr.length;i++){
+            System.out.println(copy[i]);
+        }
+    }
+}
+
+
+//Second Largest Element in Array
+class SecondLargest{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int arr[]=new int[5];
+
+        System.out.print("Enter 5 element: \n");
+        for(int i=0;i<arr.length;i++){
+            arr[i]=sc.nextInt();
+        }
+        int largest=arr[0];
+        int secondlargest=arr[0];
+        for(int i=1;i<arr.length;i++){
+            if(arr[i]>largest){
+                secondlargest=largest;
+                largest=arr[i];
+            }else if(arr[i]>secondlargest){
+                secondlargest=arr[i];
+            }
+        }
+        System.out.println("Largest= " + largest);
+        System.out.println("SecondLargest= " + secondlargest);
+    }
+}
